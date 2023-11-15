@@ -9,4 +9,10 @@ tornado
 urllib3
 visdom
 websocket-client
-https://github.com/PyMesh/PyMesh/releases/download/v0.2.1/pymesh2-0.2.1-cp36-cp36m-linux_x86_64.whl
+tensorboardX
+open3d
+opencv-python
+scikit-image
+http://imagine.enpc.fr/~langloip/data/pymesh2-0.2.1-cp37-cp37m-linux_x86_64.whl
+./pointnet2_ops_lib/.
+h5py
