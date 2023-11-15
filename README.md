@@ -6,16 +6,16 @@ This is the official code implementing the paper "Density-Imbalance-Eased LiDAR 
 
 ### Install
 
-This implementation uses Python 3.6, [Pytorch](http://pytorch.org/), [Pymesh](https://github.com/PyMesh/PyMesh), Cuda 10.1. 
+This implementation uses Python 3.7, [Pytorch](http://pytorch.org/), [Pymesh](https://github.com/PyMesh/PyMesh), Cuda 10.1. 
 ```shell
 # Copy/Paste the snippet in a terminal
 git clone https://github.com/nycu-acm/Density-Imbalance-Eased.git
 cd Density-Imbalance-Eased
 
 #Dependencies
-conda create -n atlasnet python=3.6 --yes
+conda create -n Density python=3.7
 conda activate Density
-conda install pytorch==1.7.1 torchvision==0.8.2 cudatoolkit=10.1 -c pytorch --yes
+pip install torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
 pip install --user --requirement  requirements.txt # pip dependencies
 ```
 
@@ -31,7 +31,6 @@ cd ../..
 
 ### Usage
 
-* **[Demo](./doc/demo.md)** :    ```python train.py --demo```
 * **[Training](./doc/training.md)** :  ```python train.py --shapenet13```  *Monitor on  http://localhost:8890/*
 
 ### Quantitative Results on the PUGAN Dataset
